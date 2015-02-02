@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: {{ site.color.primary-dark }};
+    background-color: #000000;
 }
 
 html {
@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: {{ site.color.links }};
+    color: #219ab3;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -66,7 +66,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: {{ site.color.primary-dark }};
+    background-color: #000000;
 }
 
 .navbar-custom .navbar-brand {
@@ -123,7 +123,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: {{ site.color.primary-dark }};
+        background-color: #000000;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -139,7 +139,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: {{ site.color.primary-dark }};
+    background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -257,7 +257,7 @@ a:focus {
     padding: 50px 0;
     color: #fff;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: {{ site.color.primary-dark }};
+    background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -295,17 +295,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid {{ site.color.links }};
-    color: {{ site.color.links }};
+    border: 1px solid #219ab3;
+    color: #219ab3;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid {{ site.color.links }};
+    border: 1px solid #219ab3;
     outline: 0;
-    color: {{ site.color.primary-dark }};
-    background-color: {{ site.color.links }};
+    color: #000000;
+    background-color: #219ab3;
 }
 
 ul.banner-social-buttons {
