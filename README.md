@@ -10,4 +10,4 @@ View this jekyll theme in action [here](https://jeromelachaud.github.io/grayscal
 ![screenshot](https://raw.githubusercontent.com/jeromelachaud/grayscale-theme/master/screenshot.png)
 
 =========
-For more details, read [documentation](http://jekyllrb.com/)
+For more details, read the [documentation](http://jekyllrb.com/)
