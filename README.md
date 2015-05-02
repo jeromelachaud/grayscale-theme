@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Grayscale Jekyll theme
 =========================
 
@@ -11,3 +12,9 @@ View this jekyll theme in action [here](https://jeromelachaud.github.io/grayscal
 
 =========
 For more details, read the [documentation](http://jekyllrb.com/)
+||||||| merged common ancestors
+=======
+Branch for demo purposes only. 
+
+Do not use for your projects
+>>>>>>> gh-pages
