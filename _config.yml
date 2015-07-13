@@ -1,5 +1,5 @@
 # Site settings
-title: GrayScale
+title: Josh Mills
 email: millsjb@live.unc.edu
 url: https://millsjb.github.io
 description: "Welcome! This website is the home of Josh Mills..."
@@ -16,10 +16,10 @@ footer: Josh Mills
 social:
   - title: twitter
     url: https://twitter.com/millsbennett
-  - title: instagram
-    url: https://instagram.com/JBM94
   - title: facebook
   	url: https://facebook.com/josh.mills.9
+  - title: instagram
+    url: https://instagram.com/JBM94
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
   - title: github
