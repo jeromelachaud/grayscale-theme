@@ -29,6 +29,12 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+// remove the focused state after click,
+// otherwise bootstrap will still highlight the link
+$("a").mouseup(function(){
+    $(this).blur();
+})
+
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
