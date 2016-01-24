@@ -185,7 +185,7 @@ function init() {
 				var myLatLng = {lat: 35.919576, lng: -79.053618};
 				
 				var mapOptions = {
-					zoom: 14,
+					zoom: 5,
 					center: myLatLng,
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
 					zoomControl: true,
