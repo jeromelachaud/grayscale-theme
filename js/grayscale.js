@@ -185,7 +185,7 @@ function init() {
 				var myLatLng = {lat: 35.919576, lng: -79.053618};
 				
 				var mapOptions = {
-					zoom: 5,
+					zoom: 50,
 					center: myLatLng,
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
 					zoomControl: true,
@@ -228,5 +228,4 @@ function init() {
 					infowindow.open(map, marker);
 				});
 			}
-			google.maps.event.addDomListener(window, 'load', init);
 }
