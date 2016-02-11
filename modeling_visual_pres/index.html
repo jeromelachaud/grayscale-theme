@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		
+		<!-- BASE URL: change this href to the intended URL of your slide show, e.g. - http://USERNAME.github.io/SLIDESHOW-REPO/ -->
+		<base href="http://millsjb.github.io/inls161-revealjs-template//"> 
+
+		<title>Modeling Visual Sampling</title>
+		
+		
+		<meta name="author" content="Josh Mills">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Code syntax highlighting -->
+  		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+					<p>Modeling visual sampling on in-car displays: The challenge of predicting safety-critical lapses of control</p>
+					<p>Josh Mills</p>
+					<p>
+						<h4>2016-01-28</h4>
+					</p>
+				</section>
+				
+<section class="slide level1">
+<p>Research Area</p>
+<aside class="notes">
+This paper presents a novel mathematical model for visual search and selection time in linear menus.
+</aside>
+</section>	
+
+<section class="slide level1">
+</p>Strategies used:</p>
+	
+	<section class="slide level1">
+	<p>serial</p>
+	</section>
+	
+	<section class="slide level1">
+	<p>directed</p>
+	</section>
+	
+<aside class="notes">
+Two search strategies were assumed, serial and directed in relation to a pointing sub-task
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Purpose</p>
+<aside class="notes">
+The model has the potential to improve menu designs by helping designers identify more effective solutions without conducting empirical studies
+i.e. to design better menus
+The goal is to advance the scope and validity of mathematical models of linear menus
+</aside>
+</section>	
+<!--
+<section class="slide level1">
+<a href="#">
+	<img src="https://statistics.laerd.com/stata-tutorials/img/lr/menu-linear-regression.png" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+Example of a linear menu
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Variables</p>
+<aside class="notes">
+Four independent variables: Menu length, Menu organization, Practice, and Target location
+</aside>
+</section>					
+				
+<section class="slide level1">
+<p>However, also looked at</p>
+<aside class="notes">
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Alphabetical, semantic, and unordered</p>
+<aside class="notes">
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Last item effect</p>
+<aside class="notes">
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Find-and-point and Track-and-point</p>
+<aside class="notes">
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Directed Search</p>
+<aside class="notes">
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Serial Search</p>
+<aside class="notes">
+</aside>
+</section>	
+				
+<section class="slide level1">
+<p>Analysis</p>
+<aside class="notes">
+
+</aside>
+</section>					
+			
+<section class="slide level1">
+<p>Absent Search Effect:</p>
+<aside class="notes">
+Absent target effect: It can be seen that participants were initially very slow at making these absent target 
+decisions during the first block of trials and by the last block, participants were very quick at indicating when 
+there was an absent target.
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Practice Effect: (Table 1)</p>
+<a href="#">
+	<img src="https://millsjb.github.io/reveal.js-3/Table1" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+Practice effect: Table 1 shows that there was a consistent effect of block, reflecting that users became faster 
+at locating the target with repeated practice at searching the same menu
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Target Position Effect Effect: (Figure 2)</p>
+<a href="#">
+	<img src="https://millsjb.github.io/reveal.js-3/Figure2" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+Target position effect: There was a robust effect of Target position on search time (Figure 2)
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Menu Length Effect:</p>
+<aside class="notes">
+Menu length effect: Selection times were longer for targets in a given position when the menu contained more items.
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Menu Organization Effect:</p>
+<aside class="notes">
+Menu organization effect: Participants were faster at selecting targets when the menu had either an alphabetic or 
+semantic organization compared to when it had an unordered organization
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Last Item Effect:</p>
+<aside class="notes">
+Last item effect: It is the opposite of what would be expected by Fitts’ law, that items positioned last are faster to select
+</aside>
+</section>
+				
+<section class="slide level1">
+<p>Applying the Results</p>
+<aside class="notes">
+This paper advances the understanding of menu performance by providing for pointing behavior and visual search. It achieves this 
+by combining assumptions about search and pointing strategies that have been identified by previous literature but never modeled in
+ a single model
+</aside>
+</section>	
+
+<section class="slide level1">
+<p>Explanation</p>
+<aside class="notes">
+•	Explanation: The model increases our ability to cover important design factors by a single model, the model covers the effects 
+of menu organization, absent item, and target position, as well as the previously modeled factors of menu length and experience. 
+Model also proposes counter-intuitive “last item effect”
+</aside>
+</section>				
+			
+-->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				
+				// USE THESE SETTINGS FOR THE AUDIO AND AUTO-ADVANCE
+				//autoSlide: 5000,
+				audioPrefix: 'audio/',        // audio files are stored in the "audio" folder
+				audioSuffix: '.ogg',	      // audio files have the ".ogg" ending
+				audioDefaultDuration: 2, // default duration if no audio is available
+				audioPlayerOpacity: 0.05,     // opacity value of audio player if unfocused
+				audioTextToSpeechURL: "http://tts-api.com/tts.mp3?q=",  // text is added to this URL
+				
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
