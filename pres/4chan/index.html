@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		
+		<!-- BASE URL: change this href to the intended URL of your slide show, e.g. - http://USERNAME.github.io/SLIDESHOW-REPO/ -->
+		<base href="http://millsjb.github.io/inls161-revealjs-template//"> 
+
+		<title>Cypherpunks</title>
+		
+		
+		<meta name="author" content="Josh Mills">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<!-- Code syntax highlighting -->
+  		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+					<h2>Cypherpunks: Freedom and the Future of the Internet</h2>
+					<p>Josh Mills</p>
+					<p>
+						<h4>2016-03-03</h4>
+					</p>
+				</section>
+
+<!-- Why is the book important, especially related to IS, and the ideas it is discussing. Also note where you felt their 
+support for their ideas was good and where it could have been better. -->
+
+<section class="slide level1">
+<p>Intro</p>
+<aside class="notes">
+This book is a transcript of a discussion that took place amongst four leading privacy/internet advocates.
+</aside>
+</section>
+
+<section class="slide level1">
+
+	<section class="slide level1">
+	<a href="#">
+		<img src="http://img04.deviantart.net/f67e/i/2014/096/7/3/4chan_logo_vector__transparent_background__by_wize_kevn-d7da8ts.png" alt="4chan logo" style="width:80%;height:50%;">
+	</a>
+	<aside class="notes">
+	I chose the community of 4chan to examine for my project. 4chan is a very unique community with many quirks. 
+	</aside>
+	</section>
+	
+	<section class="slide level1">
+	<a href="#">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Moot_smiling_at_ROFLCon_II.jpg" alt="4chan creator" style="width:80%;height:50%;">
+	</a>
+	<aside class="notes">
+	Founded by Christopher Poole, 4chan is a online community much like reddit where users can leave posts, though 4chan is unique because everyone on the site is anonymous. 
+	</aside>
+	</section>
+	
+	<section class="slide level1">
+	<p>Users are anonymous</p>
+	<aside class="notes">
+	Users generally post anonymously, with the most recent posts appearing above the rest. 4chan is split into various boards with their own specific content and guidelines. 
+	Registration is not required, nor is it possible (except for staff).
+	</aside>
+	</section>
+	
+	<section class="slide level1">
+	<h3>"lunatic, juvenile... brilliant, ridiculous and alarming."</h3>
+	<aside class="notes">
+	The Guardian once summarized the community in this way. 
+	</aside>
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="slide level1">
+	<a href="#">
+		<img src="http://ownieu.6x9.fr/files/2011/11/Andy-Muller-Maguhn-ccc-berlin-nov-2011-ophelianoor-e1321216766121.jpg" alt="Ref image" style="width:80%;height:80%;">
+	</a>
+	<aside class="notes">
+	andy mueller maguhn
+	</aside>
+	</section>
+	
+	<section class="slide level1">
+	<a href="#">
+		<img src="http://www.dw.com/image/0,,16483489_303,00.jpg" alt="Ref image" style="width:80%;height:80%;">
+	</a>
+	<aside class="notes">
+	jacob appelbaum
+	</aside>
+	</section>
+	
+	<section class="slide level1">
+	<a href="#">
+		<img src="http://www.filmofilia.com/wp-content/uploads/2013/01/Cumberbatch-as-Assange.jpg" alt="Ref image" style="width:80%;height:50%;">
+	</a>
+	</section>
+	
+	<section class="slide level1">
+	<a href="#">
+		<img src="http://www.sxsw.com/sites/default/files/news/image/Julian-Assange-body.jpg" alt="Ref image" style="width:80%;height:80%;">
+	</a>
+	<aside class="notes">
+	julian assange
+	</aside>
+	</section>
+	
+<aside class="notes">
+jeremie zimmermann, andy mueller maguhn, jacob appelbaum, and julian assange. Wait a minute, thats not the right Assange. There we go..
+</aside>
+</section>
+
+<section class="slide level1">
+<a href="#">
+	<img src="http://www.behindthenews.org/wp-content/uploads/2015/04/265902-wikileaks.jpg" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+Julian Assange is of course famous for his website, Wikileaks, which caused quite the controversy whenever they began releasing classified documents. 
+The site became the go-to place for whistleblowers like Bradley Manning to reveal questionable ethical secrets to the mass public.
+</aside>
+</section>
+
+<section class="slide level1">
+<a href="#">
+	<img src="http://www.iusmentis.com/society/privacy/remailers/onionrouting/onionroutingfig5.png" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+However, each author is very well known within the cypherpunk community, with Jacob working heavily on the tor network and its promotion
+</aside>
+</section>
+
+<section class="slide level1">
+<a href="#">
+	<img src="http://zdnet2.cbsistatic.com/hub/i/2014/10/02/f66ef73d-4a0b-11e4-b6a0-d4ae52e95e57/c8189c8eb28bf29b359cafec0fc97917/chaos-computer-club.jpg" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+Andy being a senior member of the Chaos Computing Club, which is a progressive hacking association based out of Germany
+</aside>
+</section>
+
+<section class="slide level1">
+<a href="#">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/La_Quadrature_du_Net.svg/2000px-La_Quadrature_du_Net.svg.png" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+And jeremie being a co-founder of La quadrature du Net, which is a citizen advocacy group defending fundamental freedoms online. Therefore it's safe to say each of the authors are quite invested in the discussion and fight for internet freedom.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>So..</p>
+<aside class="notes">
+</aside>
+</section>
+
+<section class="slide level1">
+<p>what is a Cypherpunk?</p>
+<aside class="notes">
+A cypherpunk is any activist advocating widespread use of strong cryptography as a route to social and political change. 
+The original informal groups aimed to achieve privacy and security through proactive use of cryptography.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Fundamental Freedoms</p>
+<aside class="notes">
+The four authors, and Cypherpunks for that matter believe that everyone should have freedom of communication, freedom of movement, and freedom of economic interaction. 
+</aside>
+</section>
+
+<section class="slide level1">
+<p>"free"</p>
+<aside class="notes">
+While these staples may seem ordinary to you and those who live in a free, democratic society. Physically, yes we may experience these freedoms, but the authors argue that 
+the internet is simply an extension to our physical lives, and as it turns out, we do not in fact experience these same freedoms online. Another important aspect to these 
+fundamental freedoms lies in the fact that some countries are free and therefore the online platform of the internet may serve as the best tool to overcome such dictatorships.
+</aside>
+</section>
+
+<section class="slide level1">
+<a href="#">
+	<img src="http://i.telegraph.co.uk/multimedia/archive/02066/sign_2066490b.jpg" alt="Ref image" style="width:80%;height:80%;">
+</a>
+<aside class="notes">
+One example that we have talked about in class is the Arab Spring, where protestors used the internet to reveal the conditions they were facing with their oppressive, dictatorship of a government.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>"Global Village"</p>
+<aside class="notes">
+This idea of a global village where people can become connected from all over the world and work together to accomplish something as large and significant as overthrowing a dictatorship government 
+shows how powerful of a tool the internet can be.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>No more privacy online</p>
+<aside class="notes">
+There is no privacy anymore, our communications can be spied on, and are spied on and stored and, as a result, can be used against us. So therefore the elementary interaction that we have with people physically is degraded.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Centralized Architecture</p>
+<aside class="notes">
+
+</aside>
+</section>
+
+<section class="slide level1">
+<p>"One of the fundamental things the cypherpunks recognized is that the architecture actually defines the political 
+situation, so if you have a centralized architecture, even if the best people in the world are in control of it, <span style="color: red">it 
+attracts assholes and those assholes do things with their power that the original designers would not do.</span> And it's 
+important to know that that goes for money."</p>
+<aside class="notes">
+The cypherpunks realized that a centralized architecture would simply not work due to it potential to become corrupt and used for nefarious means.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Moving away from a centralized architecture</p>
+<aside class="notes">
+What the cypherpunks then want to do is to create systems that allow us (people) to compensate each other in a truly free way where it is not possible to interfere. 
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Unsolved Problem</p>
+<aside class="notes">
+Unfortunately this is the unsolved problem of the electronic world right now because as things now stand, two credit companies, both with a US based electronic infrastructure for 
+clearance-meaning access to the data in the US jurisdiction-control most of the credit card payments of the planet.</aside>
+</section>
+
+<section class="slide level1">
+<p>decentralized architecture</p>
+<aside class="notes">
+As the authors point out, the internet could exist without this centralization, it's not that the technology is impossible, it's just that it is simply more efficient to have it centralized. 
+</aside>
+</section>
+
+<section class="slide level1">
+<p>A poor-man's facebook</p>
+<aside class="notes">
+However, as Julian points out, we need something better than saying we should have a poor-man's version of facebook and expect everyone to use it. It's a fact that it's easier to use Twitter than 
+start your own twitter and it's a fact that it's easier to use facebook than some alternative.</aside>
+</section>
+
+<section class="slide level1">
+<p>Solutions for a Decentralized architecture</p>
+<aside class="notes">
+Cryptography, anonymity, and open-source
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Cryptography</p>
+<aside class="notes">
+Cryptography is vital for a free, decentralized environment because without cryptography, we lose our privacy and therefore 
+are no longer able to freely communicate, move around, or engage in economic transactions. 
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Wikileaks</p>
+<aside class="notes">
+For example, whenever Wikileaks was engaged in leaking classified government information, the U.S. government used its power to force the credit card companies to not allow transactions to take place between wikileaks and donators. 
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Anonymity</p>
+<aside class="notes">
+Anonymity comes as a product of encryption and use of tools such as the tor network and truly allows us to experience the freedom of moverment, communication and economical interaction.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Open-source</p>
+<aside class="notes">
+Ultimately however, in order to achieve the three pillars of freedom, we must have both open-source software and hardware so that users may delve into the components and define their own individual degrees of freedom.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>"We need free software for a free world, and we need free and open hardware"</p>
+<aside class="notes">
+We are at an important point in the internet's history where less and less of the technology users have a low-level understanding of how the devices and software that they are using works. 
+This provides companies and governments the opportunity to take advantage of the user base.</aside>
+</section>
+
+<section class="slide level1">
+<p>"So I think the only people who will be able to keep the freedom that we had, say, twenty years ago-because the surveillance state has already eliminated quite a lot of that, we just don't 
+realize it yet-are those who are highly educated in the internals of this system. <span style="color:red">So it will only be a high-tech rebel elite that is free, these clever rats running around the opera house.</span>"</p>
+<aside class="notes">
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Improvements</p>
+<aside class="notes">
+While the authors greatly detailed the issues with the current architecture of the internet and its lack of freedom, in addition to laying out what they hope the future will bring (encryption, anonymity, 
+and open-source, as well as knowledgable users), I wish they would have spent more time discussing tangible solutions to the issues, outlining how users might achieve anonymity, or encryption, such as using the tor network.
+</aside>
+</section>
+
+<section class="slide level1">
+<p>Questions?</p>
+<aside class="notes">
+</aside>
+</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				overview: true,
+				touch: true,
+			
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				
+				// USE THESE SETTINGS FOR THE AUDIO AND AUTO-ADVANCE
+				//autoSlide: 5000,
+				audioPrefix: 'audio/',        // audio files are stored in the "audio" folder
+				audioSuffix: '.ogg',	      // audio files have the ".ogg" ending
+				audioDefaultDuration: 2, // default duration if no audio is available
+				audioPlayerOpacity: 0.05,     // opacity value of audio player if unfocused
+				audioTextToSpeechURL: "http://tts-api.com/tts.mp3?q=",  // text is added to this URL
+				
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
+				
