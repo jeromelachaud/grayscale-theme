@@ -1,8 +1,8 @@
 # Site settings
-title: Grayscale
-email: your-email@domain.com
-url: https://example.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Josh Mills
+email: millsjb@live.unc.edu
+url: https://millsjb.github.io
+description: "Welcome! This website is the home of Josh Mills..."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -10,20 +10,18 @@ color:
   links: '#219ab3'
 
 # Footer settings
-footer: Your Website
+footer: Josh Mills
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: facebook
-    url:
+    url: https://twitter.com/millsbennett
+  - title: instagram
+    url: https://instagram.com/JBM94
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://github.com/millsjb
 
 # Build settings
 markdown: kramdown

@@ -39,15 +39,17 @@ $("a").mouseup(function(){
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 
+
+/*! 
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 20,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(35.9083, -79.0500), // New York
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -175,10 +177,61 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(35.919576, -79.053618);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image
     });
+    */
+    
+    function init() {
+				//var mapCanvas = document.getElementById('map');
+				
+				var myLatLng = {lat: 35.919576, lng: -79.053618};
+				
+				var mapOptions = {
+					zoom: 50,
+					center: myLatLng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					zoomControl: true,
+					zoomControlOptions: {
+						position: google.maps.ControlPosition.RIGHT_BOTTOM
+					},
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+						position: google.maps.ControlPosition.RIGHT_TOP
+					},
+					scaleControl: true,
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.RIGHT_BOTTOM
+					},
+					rotateControl: false
+				}
+				
+				var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+				
+				var marker = new google.maps.Marker({
+					position: myLatLng,
+					map: map,
+					title: 'Statesville High School'
+				});
+				
+				var trafficLayer = new google.maps.TrafficLayer();
+				trafficLayer.setMap(map);
+				
+				var contentString = '<div id="content">'+
+				'<h1>Statesville High School</h1>'+
+				'</div>';
+				
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
+				
+				marker.addListener('click', function() {
+					infowindow.open(map, marker);
+				});
+			}
 }
