@@ -6,8 +6,8 @@ description: "full stack web developer and art enthusiast"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#1F1F1F'
-  links: '#EFDE1D'
+  primary-dark: '#ffffff'
+  links: '#3C5231'
   #EFD125
   #dab700'
 
