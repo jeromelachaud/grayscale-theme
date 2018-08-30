@@ -7,12 +7,27 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+    <!-- This somehow doesn't work!  Leads to weird formatting issues in the website -->
+<!--     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/grayscale.css" | prepend: site.baseurl }}"> -->
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
-    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	{% if layout.common-css %}
+	    {% for css in layout.common-css %}
+	    	<link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+	    {% endfor %}
+	{% endif %}
+
+	{% if layout.common-ext-css %}
+	    {% for css in layout.common-ext-css %}
+	        {% include ext-css.html css=css %}
+	    {% endfor %}
+	{% endif %}
+
+  	{% if layout.common-googlefonts %}
+    	{% for font in layout.common-googlefonts %}
+     		 <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" type="text/css">
+    	{% endfor %}
+  	{% endif %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

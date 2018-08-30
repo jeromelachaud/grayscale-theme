@@ -1,14 +1,24 @@
+---
+common-css:
+    - "/style.css"
+common-ext-css:
+    - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+common-googlefonts:
+    - "Montserrat:300,400,500,600,700"
+    - "Lora:400,700,400italic,700italic"
+    - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+---
+
 <!DOCTYPE html>
 <html>
     {% include head.html %}
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {% include nav.html %}
-    {% include header.html %}
-    {% include about.html %}
-    {% include download.html %}
-    {% include contact.html %}
-    {% include map.html %}
-    {% include footer.html %}
-    {% include js.html %}
+        {% include nav.html %}
+        {% include header.html %}
+        {% include about.html %}
+        {% include download.html %}
+        {% include contact.html %}
+        {% include footer.html %}
+        {% include js.html %}
     </body>
 </html>
