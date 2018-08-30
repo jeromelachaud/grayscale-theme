@@ -13,6 +13,7 @@ color:
   navbar-text: "#4FBFFF"  # hover/focus/active needs rgba, so manually change those to rgba(79, 191, 255, .2)
   navbar-title: "#F9CC26"
   navbar-blog: "#E4C3F4"
+  post-subhead: "#E4C3F4"
 
 fonts:
   main: "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"

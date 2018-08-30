@@ -17,7 +17,7 @@
                 </li>
                 {% for link in site.navbar-links %}
                     {% if page.title != 'Chenchong Charles Zhu' %}
-                      {% capture linkurl %}{{ site.baseurl }}/{{ link[1] }}{% endcapture %}
+                      {% capture linkurl %}{{ site.url }}/{{ link[1] }}{% endcapture %}
                     {% else %}
                       {% capture linkurl %}{{ link[1] }}{% endcapture %}
                     {% endif %}

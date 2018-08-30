@@ -174,6 +174,85 @@ a:focus {
     font-size: 18px;
 }
 
+/* ========= BLOGPOST HEADERS ========= */
+
+/* --- Post and page headers (from beautifuljekyll) --- */
+
+.intro-header {
+  margin: 80px 0 20px;
+  position: relative;
+}
+.intro-header .post-heading h1 {
+  margin-top: 140px;
+  font-size: 35px;
+}
+.intro-header .post-heading .post-subheading {
+  font-size: 20px;
+  display: block;
+  font-weight: 300;
+  margin: 20px 0 0;
+  margin-bottom: 20px;
+}
+.intro-header .post-heading .post-meta {
+  color: {{ site.color.post-subhead }};
+  font-size: 18px;
+  font-style: italic;
+  margin: 100px 0 10px;
+}
+
+@media only screen and (min-width: 767px) {
+  .intro-header {
+    margin-top: 120px;
+    width: 100%;
+  }
+  .intro-header .post-heading h1 {
+    margin-top: 140px;
+    font-size: 45px;
+  }
+  .intro-header .post-heading .post-subheading {
+    font-size: 25px;
+    margin: 5px 0 0;
+    margin-bottom: 20px;
+  }
+}
+
+.header-section.has-img .no-img {
+  margin-top: 0;
+  background-color: #FCFCFC;
+  margin: 0 0 40px;
+  padding: 20px 0;
+  box-shadow: 0 0 5px #AAA;
+}
+.header-section .intro-header {
+  margin-top: 0px;
+  background-color: {{ site.color.primary-dark }}; /* Used if the image is unavailable */
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  padding-bottom: 70px;
+}
+/* Many phones are 320 or 360px, so make sure images are a proper aspect ratio in those cases */
+.header-section.has-img .intro-header.no-img {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+    .header-section.has-img .intro-header.no-img {
+      display: block;
+    }
+    .intro-header.big-img .post-heading {
+      width: 100%;
+      height: 220px;
+    }
+    .intro-header.big-img .post-heading {
+      display: none;
+    }
+    .header-section.has-img .big-img {
+      margin-bottom: 0;
+    }
+}
+
+/*================================================*/
+
 @media(min-width:767px) {
     .intro {
         height: 100%;
