@@ -1,0 +1,11 @@
+---
+layout: default
+title: "Uncorrelated Thoughts"
+subtitle: yet another blog about data and science
+permalink: /blog/
+---
+
+BRINGHAM
+{% for post in site.posts %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}
