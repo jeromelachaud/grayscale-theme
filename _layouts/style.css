@@ -1,2 +1,5 @@
+/*There's no good reason why we need to do this, but explicitly importing these two files as style sheets
+leads to weird compatibility issues*/
+
 {% include css/bootstrap.min.css %}
-{% include css/grayscale.css %}
+{% include css/main.css %}

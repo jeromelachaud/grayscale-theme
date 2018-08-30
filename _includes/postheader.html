@@ -1,0 +1,18 @@
+<!-- Blogpost Header -->
+<header class="header-section {% if page.img %}has-img{% endif %}">
+<div class="intro-header" {% if page.img %}style="background-image: url({{ page.img }})"{% endif %}>
+<div class="container">
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+            {% if page.subtitle %}
+                <h2 class="post-subheading">{{ page.subtitle }}</h2>
+            {% endif %}          
+            <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</header>

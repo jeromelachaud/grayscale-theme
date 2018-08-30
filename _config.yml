@@ -1,13 +1,48 @@
 # Site settings
-title: Grayscale
-email: your-email@domain.com
-url: https://example.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Chenchong Charles Zhu
+email: chenchong.zhu@gmail.com
+url: https://cczhu.github.io
+baseurl: ""
+description: "Personal website."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#000000'
-  links: '#219ab3'
+  primary-dark: "#2F2F45"
+  links: "#219ab3"
+  navbar: "#1C1A2C"
+  navbar-text: "#4FBFFF"  # hover/focus/active needs rgba, so manually change those to rgba(79, 191, 255, .2)
+  navbar-title: "#F9CC26"
+  navbar-blog: "#E4C3F4"
+  post-subhead: "#E4C3F4"
+
+fonts:
+  main: "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+  headers: "'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+  navbar: "'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+
+
+navbar-col: "#1C1A2C" #"#100E1C"
+navbar-border-col: "#FFFFFF"
+navbar-title-col: "#F9CC26"
+navbar-text-col: "#4FBFFF"
+navbar-blog-col: "#E4C3F4"
+navbar-children-col: "#1C1A2C"
+page-col: "#2F2F45" #"#1C1A2C" "#191D2B"
+page-text-col: "#FFFFFF"
+link-col: "#4FBFFF"
+hover-col: "#F9CC26" #"#f97a26"
+post-head-col: "#4FBFFF"
+post-subhead-col: "#BBA2C7"
+footer-col: "#1C1A2C"
+footer-text-col: "#BBA2C7"
+footer-link-col: "#4FBFFF"
+
+# Navbar settings
+navbar-links:
+  About: "#about"
+  Download: "#download"
+  Contact: "#contact"
+  Blog: "/blog"
 
 # Footer settings
 footer: Your Website
@@ -15,16 +50,18 @@ footer: Your Website
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: https://twitter.com/ChenchongZ
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://github.com/cczhu/
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Paginator settings
+paginate: 5
+paginate_path: "blog/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-paginate
