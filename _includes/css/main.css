@@ -1,5 +1,6 @@
 /*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Charles's website theme, based off of the
+ * Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -7,7 +8,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: {{ site.fonts.main }};
     color: #fff;
     background-color: {{ site.color.primary-dark }};
 }
@@ -17,17 +18,12 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-family: {{ site.fonts.headers }};
+    letter-spacing: -1px;
+    font-weight: 500;
 }
 
 p {
@@ -63,14 +59,16 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 0px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: {{ site.color.primary-dark }};
+    font-family: {{ site.fonts.navbar }};
+    background-color: {{ site.color.navbar }};
 }
 
 .navbar-custom .navbar-brand {
+    font-size: 20px;
     font-weight: 700;
+    color: {{ site.color.navbar-title }};
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -92,12 +90,22 @@ a:focus {
     color: #fff;
 }
 
+/*Doesn't seem to format correctly.
+.navbar-custom .nav li.blog a {
+  color: {{ site.color.navbar-blog }};
+}*/
+
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(79, 191, 255, .2);
 }
 
 .navbar-custom .nav li a {
+    font-family: {{ site.fonts.navbar }};
+    color: {{ site.color.navbar-text }};
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -107,7 +115,8 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    color: #F9CC26;
+    background-color: rgba(79, 191, 255, .2);
 }
 
 @media(min-width:767px) {
@@ -123,11 +132,11 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: {{ site.color.primary-dark }};
+        background-color: {{ site.color.navbar }};
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 0px solid rgba(255,255,255,.3);
     }
 }
 

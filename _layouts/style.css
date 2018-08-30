@@ -2,4 +2,4 @@
 leads to weird compatibility issues*/
 
 {% include css/bootstrap.min.css %}
-{% include css/grayscale.css %}
+{% include css/main.css %}
