@@ -10,12 +10,15 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: {{ site.color.primary-dark }};
-    margin: 0 10% 0 10%;
 }
 
 html {
     width: 100%;
     height: 100%;
+}
+
+#ourtext {
+margin: 5% 10% 0 10%;   
 }
 
 h1,
@@ -136,7 +139,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(img/graph.PNG) no-repeat bottom center scroll;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
