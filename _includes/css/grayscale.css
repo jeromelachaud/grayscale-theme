@@ -21,6 +21,11 @@ html {
 margin: 5% 10% 0 10%;   
 }
 
+.inlineImages {
+ display: inline-block;
+ width:100%;
+ }
+
 h1,
 h2,
 h3,
