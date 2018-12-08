@@ -26,6 +26,10 @@ margin: 5% 10% 0 10%;
  width:100%;
  }
 
+figure { 
+    display: inline-block;
+}
+
 h1,
 h2,
 h3,
