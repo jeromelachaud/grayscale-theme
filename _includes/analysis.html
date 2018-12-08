@@ -1,0 +1,59 @@
+<h1 id="analysis">Analysis</h1>
+
+<p>Now you know everything about our idea and how we created the networks of Fans and Haters. Let's look at how we analysed them.
+The main idea behind the analysis of Book Network is finding communities of books. We want to find out what groups of books people read and try to answer - why? At first we expected people tend to stick to couple of genres when they like, so the communities would be prevalently genre based. But as we progressed with our analysis, we found out it is not exactly true - the tastes in literature are much more varied. But before we delve into what we've found out, let's look at how we did it.</p>
+
+<h2 id="findingcommunities">Finding communities</h2>
+
+<p>At first we had to identify communities within our networks. We used the Louvain Community detection algorithm for that. 
+This algorithm optimizes modudularity, which is a measure of density of connections within community compared to connections to other communities. The optimization is performed in two steps. Firstly, the method looks for "small" communities by optimizing modularity locally. Second, it aggregates nodes belonging to the same community and builds a new network whose nodes are the communities. This is repeated until maximum modularity is achieved. On the downside, it is harder to detect small communities within large network, because they are often merged together into a bigger community. It might explain why the book communites often contain groups of books on several topics. </p>
+
+<p>Resulting communities often contain more than 100 books. In the further analysis we've used top 50 most connected books within each community, to get more easily interpretable results. These books were read by most of the users, therefore we believe this sample is good representation of the community.
+[list of communities]</p>
+
+<h2 id="tags">Tags</h2>
+
+<h3 id="whatarethesebooks"><em>"What are these books?"</em></h3>
+
+<p>To find out what kinds of books are within each community we looked into tags. These are created by the users, when they categorise the books in their GoodReads library. We took 5 most frequent tags for each book. However we've excluded several popular tags, which don't tell us much about the content of the book, rather how does the user got the book: #audiobook #library #owned-books
+Then we pooled together the top 5 tags of the most connected books in the community and displayed the most frequent ones in word clouds.
+[wordcloud example]</p>
+
+<h2 id="reviews">Reviews</h2>
+
+<h3 id="whatdopeoplelikeaboutthesebooks"><em>"What do people like about these books?"</em></h3>
+
+<p>We also wanted to find another aspect what ties the communities together - how people feel about the books in the community. In case of Fan Network what are the things that people liked about the books. And as for Haters, what they disliked. 
+We tried to answer that using sentiment analysis of book reviews. We took reviews of the top 50 most connected books. But we've found out there is quite a lot of them written in different languages. So we've decided to consider only reviews in English, we used a neat library for detecting languages <em>langdetect</em> to do that. Why? Simply because we want to understand our word clouds, since we are all about ~~aeromancy~~ cloud interpretation. However we've got some nice stats about the language distributions within communities.
+We proceeded to calculate mean sentiment and standart deviation to choose only the most positive and most negative reviews for the community. Then we compute TF-IDF for these reviews to find the most important words. The algorithm allows us to find frequent words, which are also uniqe for each community. And finally we make our favorite word clouds.
+[example word cloud]</p>
+
+<h1 id="fannetwork">Fan Network</h1>
+
+<p>//todo</p>
+
+<h1 id="hatersnetwork">Haters Network</h1>
+
+<p>//todo</p>
+
+<h1 id="fansvshaterscomparison">Fans vs Haters Comparison</h1>
+
+<p>//todo</p>
+
+<h1 id="recommendations-1">Recommendations</h1>
+
+<p>//todo</p>
+
+<p>References</p>
+
+<ul>
+<li>https://neo4j.com/docs/graph-algorithms/current/algorithms/louvain/</li>
+
+<li>https://en.wikipedia.org/wiki/Louvain_Modularity</li>
+
+<li>https://perso.uclouvain.be/vincent.blondel/research/louvain.html</li>
+
+<li>https://pypi.org/project/langdetect/</li>
+
+<li>https://github.com/zygmuntz/goodbooks-10k</li>
+</ul>
