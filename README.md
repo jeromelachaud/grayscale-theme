@@ -1,13 +1,5 @@
-Grayscale Jekyll theme
+Book Network
 =========================
+The network of most popular books from GoodReads.
 
-Jekyll theme based on [Grayscale bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-grayscale/)
-
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.github.io/grayscale-theme)
-
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/grayscale-theme/master/screenshot.png)
-
-=========
-For more details, read the [documentation](http://jekyllrb.com/)
+Final project for class *02805 Social graphs and interactions* at Technical University of Denmark.
