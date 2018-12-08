@@ -10,8 +10,7 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: {{ site.color.primary-dark }};
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10% 0 10%;
 }
 
 html {
