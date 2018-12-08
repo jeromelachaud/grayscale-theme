@@ -30,6 +30,7 @@ margin: 5% 10% 0 10%;
 width:200px;
 display: inline-block;
 vertical-align: text-top;
+margin: 2% 10% 0 10%;
 }
 
 li {
@@ -39,6 +40,8 @@ font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
 figure { 
     display: inline-block;
 }
+
+figcaption {margin: 0  0 10%  10%;}
 
 h1,
 h2,
