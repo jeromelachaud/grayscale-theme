@@ -10,9 +10,11 @@ The main idea behind the analysis of Book Network is finding communities of book
 This algorithm optimizes modudularity, which is a measure of density of connections within community compared to connections to other communities. The optimization is performed in two steps. Firstly, the method looks for "small" communities by optimizing modularity locally. Second, it aggregates nodes belonging to the same community and builds a new network whose nodes are the communities. This is repeated until maximum modularity is achieved. On the downside, it is harder to detect small communities within large network, because they are often merged together into a bigger community. It might explain why the book communites often contain groups of books on several topics. </p>
 
 <p>Resulting communities often contain more than 100 books. In the further analysis we've used top 50 most connected books within each community, to get more easily interpretable results. These books were read by most of the users, therefore we believe this sample is good representation of the community.</p>
-<table class="table table-bordered table-hover table-condensed" width="400">
-<thead><tr><th title="Field #1">Community</th>
-<th title="Field #2">Books</th>
+
+<div class="inlineImages ">  
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Fan Community</th>
+<th title="Field #2">Number of Books</th>
 </tr></thead>
 <tbody><tr>
 <td>#0</td>
@@ -63,6 +65,83 @@ This algorithm optimizes modudularity, which is a measure of density of connecti
 <td align="right"> 25</td>
 </tr>
 </tbody></table>
+   
+   
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Haters Community</th>
+<th title="Field #2">Number of Books</th>
+</tr></thead>
+<tbody><tr>
+<td>#0</td>
+<td align="right"> 101</td>
+</tr>
+<tr>
+<td>#1</td>
+<td align="right"> 190</td>
+</tr>
+<tr>
+<td>#2</td>
+<td align="right"> 201</td>
+</tr>
+<tr>
+<td>#3</td>
+<td align="right"> 314</td>
+</tr>
+<tr>
+<td>#4</td>
+<td align="right"> 182</td>
+</tr>
+<tr>
+<td>#5</td>
+<td align="right"> 120</td>
+</tr>
+<tr>
+<td>#6</td>
+<td align="right"> 127</td>
+</tr>
+<tr>
+<td>#7</td>
+<td align="right"> 44</td>
+</tr>
+<tr>
+<td>#8</td>
+<td align="right"> 184</td>
+</tr>
+<tr>
+<td>#9</td>
+<td align="right"> 46</td>
+</tr>
+<tr>
+<td>#10</td>
+<td align="right"> 153</td>
+</tr>
+<tr>
+<td>#11</td>
+<td align="right"> 271</td>
+</tr>
+<tr>
+<td>#12</td>
+<td align="right"> 35</td>
+</tr>
+<tr>
+<td>#13</td>
+<td align="right"> 67</td>
+</tr>
+<tr>
+<td>#14</td>
+<td align="right"> 13</td>
+</tr>
+<tr>
+<td>#15</td>
+<td align="right"> 62</td>
+</tr>
+<tr>
+<td>#16</td>
+<td align="right"> 27</td>
+</tr>
+</tbody></table>
+   
+</div>
 
 <h2 id="tags">Tags</h2>
 
