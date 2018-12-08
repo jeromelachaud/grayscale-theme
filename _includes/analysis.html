@@ -9,8 +9,60 @@ The main idea behind the analysis of Book Network is finding communities of book
 <p>At first we had to identify communities within our networks. We used the Louvain Community detection algorithm for that. 
 This algorithm optimizes modudularity, which is a measure of density of connections within community compared to connections to other communities. The optimization is performed in two steps. Firstly, the method looks for "small" communities by optimizing modularity locally. Second, it aggregates nodes belonging to the same community and builds a new network whose nodes are the communities. This is repeated until maximum modularity is achieved. On the downside, it is harder to detect small communities within large network, because they are often merged together into a bigger community. It might explain why the book communites often contain groups of books on several topics. </p>
 
-<p>Resulting communities often contain more than 100 books. In the further analysis we've used top 50 most connected books within each community, to get more easily interpretable results. These books were read by most of the users, therefore we believe this sample is good representation of the community.
-[list of communities]</p>
+<p>Resulting communities often contain more than 100 books. In the further analysis we've used top 50 most connected books within each community, to get more easily interpretable results. These books were read by most of the users, therefore we believe this sample is good representation of the community.</p>
+<table class="table table-bordered table-hover table-condensed" width="400">
+<thead><tr><th title="Field #1">Community</th>
+<th title="Field #2">Books</th>
+</tr></thead>
+<tbody><tr>
+<td>#0</td>
+<td align="right"> 391</td>
+</tr>
+<tr>
+<td>#1</td>
+<td align="right"> 158</td>
+</tr>
+<tr>
+<td>#2</td>
+<td align="right"> 322</td>
+</tr>
+<tr>
+<td>#3</td>
+<td align="right"> 433</td>
+</tr>
+<tr>
+<td>#4</td>
+<td align="right"> 249</td>
+</tr>
+<tr>
+<td>#5</td>
+<td align="right"> 347</td>
+</tr>
+<tr>
+<td>#6</td>
+<td align="right"> 158</td>
+</tr>
+<tr>
+<td>#7</td>
+<td align="right"> 198</td>
+</tr>
+<tr>
+<td>#8</td>
+<td align="right"> 606</td>
+</tr>
+<tr>
+<td>#9</td>
+<td align="right"> 60</td>
+</tr>
+<tr>
+<td>#10</td>
+<td align="right"> 48</td>
+</tr>
+<tr>
+<td>#11</td>
+<td align="right"> 25</td>
+</tr>
+</tbody></table>
 
 <h2 id="tags">Tags</h2>
 
@@ -23,14 +75,14 @@ Then we pooled together the top 5 tags of the most connected books in the commun
 <div id="inlineImages">
 <figure>
 <img style="display: inline; margin: 0 5px;" title="Fans_Tags_3" src="img/tags3.png" alt="" />
-   <figcaption>Fans Community 3 Tags</figcaption>
+   <figcaption>Fans Community 3</figcaption>
 </figure>
 <figure>
 <img style="display: inline; margin: 0 5px;" title="Haters_Tags_0" src="img/tagsH0.png" alt="" />
-    <figcaption>Haters Community 0 Tags</figcaption>
+    <figcaption>Haters Community 0</figcaption>
 </figure>
 </div>
-
+<br />
 <h2 id="reviews">Reviews</h2>
 
 <h3 id="whatdopeoplelikeaboutthesebooks"><em>"What do people like about these books?"</em></h3>
