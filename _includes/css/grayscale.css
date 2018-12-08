@@ -32,6 +32,10 @@ display: inline-block;
 vertical-align: text-top;
 }
 
+li {
+font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;   
+}
+
 figure { 
     display: inline-block;
 }
