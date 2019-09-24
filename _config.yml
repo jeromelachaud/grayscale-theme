@@ -1,9 +1,9 @@
 # Site settings
-title: Grayscale
+title: Jekyll-Theme-Test
 email: your-email@domain.com
-url: https://example.github.io
+url: https://Jekyll-Theme-Test.github.io
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: "/grayscale-theme"
+baseurl: "/Jekyll-Theme-Test"
 
 # Color settings
 color:
